@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Police titre;
+    src: url("./Fonts/Inria_Serif/InriaSerif-Bold.ttf") format("truetype");
+    src: url("./Fonts/Inria_Serif/InriaSerif-Regular.ttf") format("truetype");
+    font-family: Police body;
+    src: url("./Fonts/Oleo_Script/OleoScript-Regular.ttf") format("truetype");
+    src:url("./Fonts/Oleo_Script/OleoScript-Bold.ttf") format("truetype");
+    }
+body {
+    background-image: url("./images/peach-green-backdrop.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "OleoScript-Regular";
+    width: 100%;
+    max-width: 100%;
+}
+.container {
+    width: 100%; /* Largeur de la zone de contenu */
+    max-width: 1200px; /* Largeur maximale pour le centrage */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px; /* Espacement pour la clarté */
+}
+
+.image-container {
+    background-image: url("./images/code-1076536_1920.jpg");
+    background-size: contain; /* Pour conserver les proportions de l'image */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    background-position: center; /* Centrer l'image horizontalement et verticalement */
+    width: 100%; /* Largeur de la zone de l'image */
+    max-width: 100%; /* Largeur maximale de l'image */
+    height: 400px; /* Hauteur de l'image, ajustez selon vos besoins */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+}
+.titre {
+text-align: center;
+font-family: "Inria_Serif-Regular";
+color: black;
+
+}
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
