@@ -22,7 +22,7 @@ body {
 }
 
 .image-container {
-    background-image: url("./images/code-1076536_1920.jpg");
+    background-image: url("./images/logo\ DTDEV.png");
     background-size: contain; /* Pour conserver les proportions de l'image */
     background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
     background-position: center; /* Centrer l'image horizontalement et verticalement */
@@ -30,6 +30,15 @@ body {
     max-width: 100%; /* Largeur maximale de l'image */
     height: 400px; /* Hauteur de l'image, ajustez selon vos besoins */
     margin: 0 auto; /* Centrer l'image horizontalement */
+}
+.image-amovible img {
+    opacity: 0; /* Définit l'opacité initiale des images à 0 (invisible) */
+    transition: opacity 1s ease; /* Ajoute une transition d'opacité de 1 seconde */
+}
+
+/* Animation pour faire apparaître les images */
+.image-container img.active {
+    opacity: 1; /* Rend l'image visible */
 }
 .titre {
 text-align: center;
