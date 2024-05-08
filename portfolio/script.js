@@ -24,7 +24,7 @@ window.onclick = function(event) {
   }
 }
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll(".image-amovible img");
+    const images = document.querySelectorAll(".image-amovible");
     let index = 0;
 
     setInterval(() => {

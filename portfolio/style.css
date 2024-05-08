@@ -31,13 +31,13 @@ body {
     height: 400px; /* Hauteur de l'image, ajustez selon vos besoins */
     margin: 0 auto; /* Centrer l'image horizontalement */
 }
-.image-amovible img {
+.image-amovible {
     opacity: 0; /* Définit l'opacité initiale des images à 0 (invisible) */
     transition: opacity 1s ease; /* Ajoute une transition d'opacité de 1 seconde */
 }
 
 /* Animation pour faire apparaître les images */
-.image-container img.active {
+.image-amovible img.active {
     opacity: 1; /* Rend l'image visible */
 }
 .titre {
@@ -47,7 +47,9 @@ color: black;
 
 }
 
-form-group {
+.form-group {
+    width: 350px;
+    height: auto;
     
 }
 footer {
