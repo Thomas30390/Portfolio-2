@@ -12,7 +12,8 @@ body {
     background-position: center;
     font-family: "OleoScript-Regular";
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
+    padding-left: 100px;
 }
  /* Styles pour la modal */
         .modal {
@@ -62,13 +63,19 @@ body {
             text-decoration: none;
             cursor: pointer;
         }
-.titre {
+.titre 
+{
 text-align: center;
 font-family: "Inria_Serif-Regular";
 color: black;
-
 }
-
+.logo
+{
+    display: block;
+            margin: 0 auto; /* Centre l'image horizontalement */
+            max-width: 20%; /* Ajuste la largeur du logo */
+            height: auto; /* Maintient le ratio du logo */
+}
 .form-group {
     width: 350px;
     height: auto;
