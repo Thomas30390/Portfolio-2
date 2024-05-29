@@ -2,10 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./images/logo DTDEV.png" alt="image de code"
+    <link rel="icon" href="./images/logo DTDEV.png" alt="image de code">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" tyoe="text/css" rel="stylesheet">
     <title>Mon Portfolio</title>
+ 
   </head>
   <body>
     <div id="app"></div>
@@ -29,13 +30,26 @@
       Cahier des charges
       espace commentaire
       La Socketterie
-      <div class="image-amovible">
-    <img src="./images/" alt="CV">
-    <img src="./images/" alt="Cahier des charges">
-    <img src="./images/" alt="La Socketterie">
+     
+    </p>
+    <h2>Ce que j'ai déjà fait</h2>
+
+<!-- Images qui déclenchent la modal -->
+<img class="myImg" src="./images/miniature CV.png" alt="CV de Thomas" style="width:100%;max-width:300px;cursor:pointer">
+<img class="myImg" src="./images/logo socketterie.png" alt="Logo la Socketterie" style="width:100%;max-width:300px;cursor:pointer">
+<img class="myImg" src="./images/Cahier des charges.png" alt="Cahier des charges" style="width:100%;max-width:300px;cursor:pointer">
+<img class="myImg" src="./images/Espace commentaire.png" alt="Espace commentaire" style="width:100%;max-width:300px;cursor:pointer">
+
+<!-- La modal -->
+<div id="myModal" class="modal">
+    <!-- Bouton de fermeture -->
+    <span class="close">&times;</span>
+    <!-- Contenu de la modal -->
+    <div class="modal-content">
+        <img id="img01" alt="Modal Image">
+    </div>
 </div>
 
-    </p>
     <form id="contact-form" action="envoi_formulaire.php" method="post">
     <div class="form-group">
         <label for="nom">Nom :</label>
