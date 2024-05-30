@@ -21,7 +21,7 @@
 </div>
     <h2>DEVERREWAERE Thomas</h2>
     <h3 class="Présentation">Présentation</h3>
-    <p>Je suis né en 1977 à Valence et après près de 20 ans de travail dans la sécurité privée, je me reconvertis dans le développement web. <br>
+    <p>Je suis né en 1977 à Valence et après 20 ans de travail dans la sécurité privée, je me reconvertis dans le développement web. <br>
     J'ai commencé ma vie professionnelle en tant qu'animateur en colonie de vacances et après mon service militaire j'ai tout de suite commencé dans une des plus grosses entreprises au monde.
     Après diverses expérience dans plusieurs sociétés j'ai crée ma propre agence de sécurité. Au bout de 7 ans d'existence, la fatigue a eut raison de mon envie de continuer.
     Démotivé et fatigué, j'ai cherché à me reconvertir. Le développement web a été une évidence pour moi. <br>
@@ -36,22 +36,33 @@
     </p>
     <h3>Ce que j'ai déjà fait</h3>
 
-<!-- Images qui déclenchent la modal -->
-<img class="myImg" src="./images/miniature CV.png" alt="CV de Thomas" style="width:100%;max-width:300px;cursor:pointer">
-<img class="myImg" src="./images/logo socketterie.png" alt="Logo la Socketterie" style="width:100%;max-width:300px;cursor:pointer">
-<img class="myImg" src="./images/Cahier des charges.png" alt="Cahier des charges" style="width:100%;max-width:300px;cursor:pointer">
-<img class="myImg" src="./images/Espace commentaire.png" alt="Espace commentaire" style="width:100%;max-width:300px;cursor:pointer">
-
-<!-- La modal -->
+<div class="image-gallery">
+    <img src="./images/miniature CV.png" alt="CV thomas" onclick="openModal();currentSlide(1)">
+    <img src="./images/logo socketterie.png" alt="logo Socketterie" onclick="openModal();currentSlide(2)">
+    <img src="./images/Cahier des charges.png" alt="Cahier des charges" onclick="openModal();currentSlide(3)">
+    <img src="./images/Espace commentaire.png" alt="Espace commentaire" onclick="openModal();currentSlide(4)">
+</div>
 <div id="myModal" class="modal">
-    <!-- Bouton de fermeture -->
-    <span class="close">&times;</span>
-    <!-- Contenu de la modal -->
+    <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
-        <img id="img01" alt="Modal Image">
+        <div class="mySlides">
+            <img src="./images/miniature CV.png" alt="CV crée en février 2024"style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="./images/logo socketterie.png" alt="logo repris pour mise en avant dans le cahier des charges" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="./images/Cahier des charges.png" alt="cahier des charges réalisé en mars 2024" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="./images/Espace commentaire.png" alt="Espace commentaire réalisé en avril 2024" style="width:100%">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
 
+<!--Formulaire de contact-->
     <form id="contact-form" action="envoi_formulaire.php" method="post">
     <div class="form-group">
         <label for="nom">Nom :</label>
@@ -77,6 +88,7 @@
 </form>
 <script src="script.js"></script>
   </body>
+  
   <footer>
     <div class="social-icons">
         <a href="https://fr-fr.facebook.com/" target="_blank"><img src="./images/logo facebook.png" alt="Facebook"></a>

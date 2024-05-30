@@ -1,30 +1,35 @@
-// Récupérer les éléments
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("img01");
-    var span = document.getElementsByClassName("close")[0];
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
 
-    // Récupérer toutes les images avec la classe "myImg"
-    var images = document.getElementsByClassName("myImg");
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
 
-    // Ajouter un gestionnaire de clic à chaque image
-    for (var i = 0; i < images.length; i++) {
-        images[i].onclick = function() {
-            modal.classList.add('show');
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-        }
+let slideIndex = 1;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "block";  
     }
+}
 
-    // Fermer la modal au clic sur le bouton de fermeture
-    span.onclick = function() {
-        modal.classList.remove('show');
-        setTimeout(() => modal.style.display = "none", 500);
+function plusSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    slideIndex += n;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
+    slides[slideIndex-1].style.display = "block";  
+}
 
-    // Fermer la modal au clic en dehors de l'image
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.classList.remove('show');
-            setTimeout(() => modal.style.display = "none", 500);
-        }
-    }
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}
+
+// Initialisation
+showSlides();
