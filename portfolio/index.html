@@ -33,10 +33,15 @@
     <h3>Ce que j'ai déjà fait</h3>
 
 <div class="image-gallery">
-    <img src="./images/miniature CV.png" alt="CV thomas" onclick="openModal();currentSlide(1)">
-    <img src="./images/logo socketterie.png" alt="logo Socketterie" onclick="openModal();currentSlide(2)">
-    <img src="./images/Cahier des charges.png" alt="Cahier des charges" onclick="openModal();currentSlide(3)">
-    <img src="./images/Espace commentaire.png" alt="Espace commentaire" onclick="openModal();currentSlide(4)">
+    <img src="./images/miniature CV.png" alt="CV thomas" class="CV" onclick="openModal();currentSlide(1)">
+    <div class="overlaycv">Texte au passage de la souris</div>
+    <img src="./images/logo socketterie.png" alt="logo Socketterie" class="logo" onclick="openModal();currentSlide(2)">
+    <div class="overlaylogo">Texte au passage de la souris</div>
+    <img src="./images/Cahier des charges.png" alt="Cahier des charges" class="cahier" onclick="openModal();currentSlide(3)">
+    <div class="overlaycahier">Texte au passage de la souris</div>
+    <img src="./images/Espace commentaire.png" alt="Espace commentaire" class="espace" onclick="openModal();currentSlide(4)">
+    <div class="overlayespace">Texte au passage de la souris</div>
+    
 </div>
 <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -81,10 +86,8 @@
         <textarea id="message" name="message" rows="5" required></textarea>
     </div>
     <button class="button" type="submit">Envoyer</button>
-</form>
-<script src="script.js"></script>
+    </form>
   </body>
-  
   <footer>
     <div class="social-icons">
         <a href="https://fr-fr.facebook.com/" target="_blank"><img src="./images/logo facebook.png" alt="Facebook"></a>
@@ -93,4 +96,5 @@
         <p>© 2024 DT Dev. Tous droits réservés.</p>
     </div>
 </footer>
+<script src="script.js"></script>
 </html>
